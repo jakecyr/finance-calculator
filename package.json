@@ -1,0 +1,17 @@
+{
+    "name": "finance-calculator",
+    "version": "1.0.0",
+    "description": "Simple financial calculation functions",
+    "main": "main.js",
+    "keywords": [
+        "finance",
+        "money",
+        "stocks",
+        "rsi",
+        "sma",
+        "present value",
+        "interest rate"
+    ],
+    "author": "Jake Cyr",
+    "license": "ISC"
+}
