@@ -17,6 +17,24 @@ module.exports = {
             return null;
         }
     },
+    calculateATR: (highs, lows, length) => {
+        const tr = highs.map((high, index) => high - lows[index]);
+
+        if (tr.length > length) {
+            for (let i = 0; i < tr.length; i++) {
+                if (i >= length) {
+                    const previousAtr = tr[i - 1];
+                    tr[i] = ((previousAtr * (length - 1)) + tr[i]) / length;
+                } else {
+                    const previousValues = tr.slice(0, i + 1);
+                    const sum = previousValues.reduce((a, b) => a + b);
+                    tr[i] = sum / length;
+                }
+            }
+        }
+
+        return tr;
+    },
     calculateRSI: (valuesArr, length) => {
         let ups = [];
         let downs = [];

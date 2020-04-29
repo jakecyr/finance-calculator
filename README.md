@@ -9,3 +9,4 @@ Simple financial calculation functions
 * Insert rate from present / future values
 * RSI with given values / length
 * SMA (simple moving average) with given values / length
+* ATR (Average True Range)

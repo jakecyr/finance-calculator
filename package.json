@@ -1,6 +1,6 @@
 {
     "name": "finance-calculator",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Simple financial calculation functions",
     "main": "main.js",
     "keywords": [
@@ -9,6 +9,7 @@
         "stocks",
         "rsi",
         "sma",
+        "atr",
         "present value",
         "interest rate"
     ],
