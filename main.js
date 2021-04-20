@@ -41,6 +41,10 @@ module.exports = {
 
         const lastPrices = valuesArr.slice(-(length + 1));
 
+        if (lastPrices.length < 2) {
+            return null;
+        }
+
         for (let i = 1; i < lastPrices.length - 1; i++) {
             const currentPrice = lastPrices[i];
             const lastPrice = lastPrices[i - 1];
@@ -61,11 +65,8 @@ module.exports = {
         if (ups.length > 0 && downs.length > 0) {
             const averageUp = ups.reduce((a, b) => a + b) / ups.length;
             const averageDown = downs.reduce((a, b) => a + b) / downs.length;
-
             const rs = averageUp / averageDown;
-            const rsi = 100 - (100 / (1 + rs));
-
-            return rsi;
+            return 100 - (100 / (1 + rs));
         } else {
             return null;
         }
