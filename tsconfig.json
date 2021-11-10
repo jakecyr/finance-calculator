@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["index.d.ts"],
+    "module": "commonjs"
+  }
+}
