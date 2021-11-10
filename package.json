@@ -1,6 +1,6 @@
 {
   "name": "finance-calculator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple financial calculation functions",
   "main": "main.js",
   "author": "Jake Cyr",

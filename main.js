@@ -14,7 +14,7 @@ const calculateSMA = (valuesArr, length) => {
   const values = valuesArr.slice(-length);
 
   if (values.length > 0) {
-    return values.reduce((a, b) => (parseInt(a) || 0) + (parseInt(b) || 0)) / values.length;
+    return values.reduce((a, b) => (parseFloat(a) || 0) + (parseFloat(b) || 0)) / values.length;
   } else {
     return null;
   }
